@@ -1,0 +1,249 @@
+
+/* PENGATURAN DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #eeeeee;
+    color: #333;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* NAVBAR */
+.navbar-custom {
+    background: #572d43;
+    padding: 13px 0;
+}
+
+.navbar-brand {
+    letter-spacing: 3px;
+    font-size: 22px;
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: 15px;
+    font-size: 13px;
+}
+
+.nav-link:hover {
+    color: #f0c4d4 !important;
+}
+
+/* HEADER */
+.hero-header {
+    background: #713b59;
+    color: white;
+    padding: 35px 0;
+}
+
+.hero-header h1 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.header-description {
+    font-size: 12px;
+    color: #f3dce6;
+}
+
+/* FOTO PROFIL */
+.profile-photo {
+    width: 165px;
+    height: 165px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #8c526e;
+}
+
+/* BAGIAN CV */
+.cv-container {
+    background: white;
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding: 35px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.left-column {
+    padding: 10px 25px 10px 10px;
+    border-right: 2px solid #e3d6dc;
+}
+
+.right-column {
+    padding: 10px 25px;
+}
+
+.cv-section {
+    margin-bottom: 30px;
+}
+
+.cv-section h4 {
+    color: #713b59;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #b99aaa;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.cv-section h5 {
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.cv-section h6 {
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 12px;
+    color: #513047;
+}
+
+.cv-section p {
+    margin-bottom: 7px;
+}
+
+.cv-section ul {
+    padding-left: 20px;
+}
+
+.cv-section li {
+    margin-bottom: 5px;
+}
+
+.info-list {
+    list-style-type: circle;
+}
+
+.profile-text {
+    text-align: justify;
+}
+
+/* TOMBOL PROFIL */
+.btn-profile {
+    background: #713b59;
+    color: white;
+    font-size: 11px;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.btn-profile:hover {
+    background: #4c293d;
+    color: white;
+}
+
+/* TABEL */
+.table {
+    font-size: 11px;
+}
+
+.table thead {
+    background: #713b59;
+    color: white;
+}
+
+.table thead th {
+    background: #713b59;
+    color: white;
+}
+
+/* ACCORDION */
+.accordion-button {
+    font-size: 12px;
+    font-weight: 600;
+    color: #713b59;
+}
+
+.accordion-button:not(.collapsed) {
+    background: #f4e9ef;
+    color: #713b59;
+}
+
+/* CAROUSEL */
+.portfolio-card {
+    background: #713b59;
+    color: white;
+    min-height: 150px;
+    padding: 30px 55px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.portfolio-card h5 {
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.portfolio-card p {
+    font-size: 12px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+/* FOOTER */
+footer {
+    background: #572d43;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+}
+
+footer p {
+    margin: 3px;
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 768px) {
+
+    .hero-header {
+        padding: 30px 15px;
+    }
+
+    .hero-header h1 {
+        font-size: 22px;
+        margin-top: 20px;
+    }
+
+    .profile-photo {
+        width: 140px;
+        height: 140px;
+    }
+
+    .cv-container {
+        padding: 20px;
+    }
+
+    .left-column {
+        border-right: none;
+        border-bottom: 2px solid #e3d6dc;
+        padding: 10px;
+    }
+
+    .right-column {
+        padding: 25px 10px;
+    }
+
+    .cv-section h4 {
+        font-size: 14px;
+    }
+}
