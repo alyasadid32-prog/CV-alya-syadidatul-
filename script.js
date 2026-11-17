@@ -84,5 +84,23 @@ function tampilkanRiwayat() {
 document.addEventListener("DOMContentLoaded", initDatabase);
 
     );
+    async function hubungkanDatabase() {
+    const SQL = await initSqlJs({
+        locateFile: file => `./${file}`
+    });
+
+    const response = await fetch("./riwayat.db");
+    const buffer = await response.arrayBuffer();
+
+    const db = new SQL.Database(new Uint8Array(buffer));
+
+    console.log("Database berhasil terhubung!");
+
+    const hasil = db.exec("SELECT * FROM riwayat");
+
+    console.log(hasil);
+}
+
+hubungkanDatabase();
 
 });
